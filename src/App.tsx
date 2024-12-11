@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import PostList from "./components/PostList";
 import PostDetails from "./components/PostDetails";
+import PostForm from "./components/PostForm";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <Routes>
           <Route path="/" element={<PostList />} />
           <Route path="/post/:id" element={<PostDetails />} />
+          <Route path="/create" element={<PostForm />} />
         </Routes>
       </div>
     </Router>
